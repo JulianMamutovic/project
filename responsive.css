@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+
+}
+.row{
+    max-width: 150px;
+    padding-left: 20px;
+    padding-left: 20px;
+    margin: 0 auto;
+
+}
+.row::after{
+content: "";
+clear: both;
+display: table;
+
+}
+.col-3, .col-4, .col-6, .col-12 {
+    float: auto;
+    width: 100%;
+
+}
+@media screen and (min-width: 440px) {
+    .col-3{
+        width:25%;
+    }
+
+    .col-4{
+        width:33.333333333%;
+    }
+
+    .col-6 {
+        width: 50%;
+    }
+
+    .col-12{
+        width:100%;
+    }
+}
